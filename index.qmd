@@ -1,0 +1,10 @@
+---
+title: "Bryant Ha's Portfolio"
+---
+# Welcome
+I'm Bryant Ha, a Marketing Operations Analyst at Bank of America with over 3 years of experience in data-driven marketing...
+
+## Contact
+- Email: bryantha@cpp.edu
+- Phone: (213) 456-7890
+- Location: LA, CA

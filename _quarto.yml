@@ -4,8 +4,6 @@ project:
 
 website:
   title: "Bryant Ha's Portfolio"
-  description: "Portfolio of Bryant Ha, Marketing Operations Analyst with expertise in data-driven marketing, R programming, and campaign optimization."
-  keywords: "Bryant Ha, Marketing Operations Analyst, data analytics, R programming, digital marketing, campaign optimization, Bank of America, Tableau, SQL"
   navbar:
     left:
       - href: index.qmd

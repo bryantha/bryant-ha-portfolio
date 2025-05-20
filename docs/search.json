@@ -12,5 +12,19 @@
     "title": "Digital Marketing: Strategy, Brand, and Positioning",
     "section": "",
     "text": "To increase adoption of Bank of America’s Mobile Banking App, used by 41 million active digital banking users, by targeting millennials and Gen Z customers with personalized digital campaigns.\n\n\n\n\nChannel Selection: Utilized a multi-channel approach, including social media (Instagram, TikTok), email marketing, and in-app notifications.\nContent Strategy: Created short-form video content showcasing app features like Zelle payments and budgeting tools, tailored to younger audiences.\nA/B Testing: Tested two email subject lines (“Manage Your Money with Ease” vs. “Unlock Smarter Banking”) to optimize open rates.\n\n\n\n\nBelow is a bar chart comparing engagement rates across channels.\n\n# Load libraries\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n# Simulated engagement data\nengagement &lt;- data.frame(\n  Channel = c(\"Social Media\", \"Email\", \"In-App Notifications\"),\n  Engagement_Rate = c(12, 18, 25)\n)\n\n# Bar plot\nggplot(engagement, aes(x = Channel, y = Engagement_Rate, fill = Channel)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal() +\n  labs(\n    title = \"Engagement Rates by Digital Channel\",\n    x = \"Channel\",\n    y = \"Engagement Rate (%)\",\n    caption = \"Simulated data for illustrative purposes\"\n  ) +\n  scale_fill_manual(values = c(\"Social Media\" = \"#1abc9c\", \"Email\" = \"#3498db\", \"In-App Notifications\" = \"#2c3e50\"))"
+  },
+  {
+    "objectID": "Project.html",
+    "href": "Project.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Objective: Increase customer engagement through targeted email marketing.\nApproach:\n- Analyzed customer segmentation data using R to identify high-value segments.\n- Designed A/B testing framework to test subject lines and content variations.\n- Visualized performance metrics using ggplot2 in R.\nResults:\n- 25% increase in open rates and 15% improvement in click-through rates.\n- Reduced unsubscribe rates by 10% through personalized content.\n\n# Sample R code for visualization\nlibrary(ggplot2)\ndata &lt;- data.frame(\n  Campaign = c(\"A\", \"B\", \"Control\"),\n  OpenRate = c(0.35, 0.30, 0.25),\n  ClickRate = c(0.20, 0.18, 0.15)\n)\nggplot(data, aes(x = Campaign, y = OpenRate, fill = Campaign)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal() +\n  labs(title = \"Email Campaign Open Rates\", y = \"Open Rate\")"
+  },
+  {
+    "objectID": "Project.html#marketing-operations-projects",
+    "href": "Project.html#marketing-operations-projects",
+    "title": "Projects",
+    "section": "",
+    "text": "Objective: Increase customer engagement through targeted email marketing.\nApproach:\n- Analyzed customer segmentation data using R to identify high-value segments.\n- Designed A/B testing framework to test subject lines and content variations.\n- Visualized performance metrics using ggplot2 in R.\nResults:\n- 25% increase in open rates and 15% improvement in click-through rates.\n- Reduced unsubscribe rates by 10% through personalized content.\n\n# Sample R code for visualization\nlibrary(ggplot2)\ndata &lt;- data.frame(\n  Campaign = c(\"A\", \"B\", \"Control\"),\n  OpenRate = c(0.35, 0.30, 0.25),\n  ClickRate = c(0.20, 0.18, 0.15)\n)\nggplot(data, aes(x = Campaign, y = OpenRate, fill = Campaign)) +\n  geom_bar(stat = \"identity\") +\n  theme_minimal() +\n  labs(title = \"Email Campaign Open Rates\", y = \"Open Rate\")"
   }
 ]

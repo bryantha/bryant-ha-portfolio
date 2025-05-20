@@ -6,14 +6,15 @@ format: html
 ## Marketing Operations Projects
 
 ### 1. Email Campaign Optimization at Bank of America
-**Objective**: Increase customer engagement through targeted email marketing.  
-**Approach**:  
-- Analyzed customer segmentation data using R to identify high-value segments.  
-- Designed A/B testing framework to test subject lines and content variations.  
-- Visualized performance metrics using ggplot2 in R.  
 
-**Results**:  
-- 25% increase in open rates and 15% improvement in click-through rates.  
+**Objective**: Increase customer engagement through targeted email marketing.\
+**Approach**:\
+- Analyzed customer segmentation data using R to identify high-value segments.\
+- Designed A/B testing framework to test subject lines and content variations.\
+- Visualized performance metrics using ggplot2 in R.
+
+**Results**:\
+- 25% increase in open rates and 15% improvement in click-through rates.\
 - Reduced unsubscribe rates by 10% through personalized content.
 
 ```{r}

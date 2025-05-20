@@ -20,17 +20,15 @@ bibliography_entries("cv-entries.bib") %>%
 Welcome to my professional resume, showcasing my experience and skills in **Market Operation Analysis** at **Bank of America**. Below is a detailed overview of my education, work experience, skills, and achievements.
 
 ## Contact Information
-
--   **Name**: \[Bryant Hq\]\
--   **Email**: bryantha\@cpp.edu\
--   **Phone**: (123) 456-7890\
--   **Location**: \[LA, CA\]
+- **Name**: [Bryant Hq]  
+- **Email**: bryantha@cpp.edu  
+- **Phone**: (123) 456-7890  
+- **Location**: [LA, CA]
 
 ## Professional Summary
-
 Results-driven Market Operation Analyst with over 3 years of experience in data-driven marketing, digital strategy, and operational efficiency at Bank of America. Skilled in R programming, data visualization, and campaign optimization, with a proven track record of increasing customer engagement and profitability.
 
-------------------------------------------------------------------------
+---
 
 ## Education
 
@@ -54,6 +52,7 @@ education_data %>%
     where = location
   )
 ```
+
 
 ```{r}
 # Inline work experience data
@@ -79,3 +78,6 @@ work_experience %>%
     why = details
   )
 ```
+
+
+
