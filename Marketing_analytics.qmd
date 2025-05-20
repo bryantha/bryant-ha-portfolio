@@ -1,0 +1,47 @@
+---
+title: "Maketing Analytics"
+author: "Bryant Ha"
+---
+
+# Data-Driven Marketing Portfolio
+
+Welcome to my portfolio of data-driven marketing projects, where I highlight my expertise in **Market Operation Analysis** at **Bank of America**. Below, I present case studies that demonstrate how I leverage data analytics to optimize marketing strategies, improve operational efficiencies, and drive measurable business outcomes.
+## Case Study 1: Optimizing Customer Segmentation for Consumer Banking
+
+### Objective
+In Bank of America’s Consumer Banking segment, which serves approximately 69 million clients, the goal was to enhance customer segmentation for targeted marketing campaigns. The challenge was to identify high-value customers for cross-selling credit card and mortgage products.[](https://newsroom.bankofamerica.com/content/newsroom/press-releases/2023/11/bofa-global-research-calls-2024--the-year-of-the-landing--.html)
+
+### Approach
+- **Data Collection**: Analyzed transactional data from 41 million active digital banking users, including spending patterns and account types.[](https://newsroom.bankofamerica.com/content/newsroom/press-releases/2022/01/bank-of-america-launches-cashpro-forecasting.html)
+- **Analysis**: Used clustering techniques (K-means in R) to segment customers based on demographics, transaction frequency, and account balances.
+- **Campaign Design**: Developed personalized email marketing campaigns for each segment, focusing on credit card offers for high-spenders and mortgage promotions for stable-income clients.
+
+### Data Visualization
+Below is a visualization of customer segments based on spending behavior.
+
+```{r}
+# Load libraries
+library(ggplot2)
+library(dplyr)
+
+# Simulated data for customer segments
+set.seed(123)
+customers <- data.frame(
+  Spending = rnorm(1000, mean = 5000, sd = 1500),
+  Transactions = rnorm(1000, mean = 20, sd = 5),
+  Segment = sample(c("High-Value", "Moderate", "Low-Value"), 1000, replace = TRUE)
+)
+
+# Scatter plot
+ggplot(customers, aes(x = Spending, y = Transactions, color = Segment)) +
+  geom_point(size = 3, alpha = 0.6) +
+  theme_minimal() +
+  labs(
+    title = "Customer Segmentation by Spending and Transactions",
+    x = "Monthly Spending ($)",
+    y = "Monthly Transactions",
+    caption = "Simulated data for illustrative purposes"
+  ) +
+  scale_color_manual(values = c("High-Value" = "#2c3e50", "Moderate" = "#1abc9c", "Low-Value" = "#e74c3c"))
+```
+

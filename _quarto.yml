@@ -1,21 +1,28 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "Untitled"
+  title: "Bryant Ha's Portfolio"
+  description: "Portfolio of Bryant Ha, Marketing Operations Analyst with expertise in data-driven marketing, R programming, and campaign optimization."
+  keywords: "Bryant Ha, Marketing Operations Analyst, data analytics, R programming, digital marketing, campaign optimization, Bank of America, Tableau, SQL"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: Marketing_analytics.qmd 
+        text: Marketing Analytics 
+      - href: projects.qmd
+        text: Projects
+      - href: Digital_Marketing.qmd
+        text: Digital Marketing
+      - href: resume.qmd
+        text: Resume
+  page-footer:
+    center: "© 2025 Bryant Ha"
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: flatly
     css: styles.css
     toc: true
-
-
-

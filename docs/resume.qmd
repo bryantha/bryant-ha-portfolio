@@ -1,0 +1,88 @@
+---
+title: "Resume"
+description: "Professional resume highlighting expertise in Market Operation Analysis at Bank of America."
+---
+
+```{r}
+library(vitae)
+# Example CV content
+bibliography_entries("cv-entries.bib") %>%
+  detailed_entries(
+    what = title,
+    when = year,
+    with = institution,
+    where = location
+  )
+```
+
+# Resume
+
+Welcome to my professional resume, showcasing my experience and skills in **Market Operation Analysis** at **Bank of America**. Below is a detailed overview of my education, work experience, skills, and achievements.
+
+## Contact Information
+- **Name**: [Bryant Hq]  
+- **Email**: bryantha@cpp.edu  
+- **Phone**: (123) 456-7890  
+- **Location**: [LA, CA]
+
+## Professional Summary
+Results-driven Market Operation Analyst with over 3 years of experience in data-driven marketing, digital strategy, and operational efficiency at Bank of America. Skilled in R programming, data visualization, and campaign optimization, with a proven track record of increasing customer engagement and profitability.
+
+---
+
+## Education
+
+```{r}
+# Load vitae package
+library(vitae)
+
+# Inline education data
+education_data <- data.frame(
+  degree = c("B.S. in Human Resources Leadership"),
+  institution = c("CAl Poly Pomona"),
+  location = c("Pomona, CA"),
+  year = c(2021)
+)
+# Render education section
+education_data %>%
+  detailed_entries(
+    what = degree,
+    when = year,
+    with = institution,
+    where = location
+  )
+```
+
+
+```{r}
+# Inline work experience data
+work_experience <- data.frame(
+  title = c("Market Operation Analyst", "Marketing Intern"),
+  employer = c("Bank of America", "TechCorp Solutions"),
+  location = c("Los Angeles, CA", "Remote"),
+  start = c("2023-06", "2022-01"),
+  end = c("Present", "2022-12"),
+  details = c(
+    "Led data-driven marketing campaigns, increasing engagement by 20% through customer segmentation.",
+    "Assisted in digital marketing projects, optimizing ad spend by 15% using A/B testing."
+  )
+)
+
+# Render work experience section
+work_experience %>%
+  detailed_entries(
+    what = title,
+    when = glue::glue("{start} -- {end}"),
+    with = employer,
+    where = location,
+    why = details
+  )
+```
+
+
+```{r}
+git add .
+git commit -m "Add resume page"
+git push origin main
+```
+

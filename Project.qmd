@@ -1,0 +1,31 @@
+---
+title: "Projects"
+format: html
+---
+
+## Marketing Operations Projects
+
+### 1. Email Campaign Optimization at Bank of America
+**Objective**: Increase customer engagement through targeted email marketing.  
+**Approach**:  
+- Analyzed customer segmentation data using R to identify high-value segments.  
+- Designed A/B testing framework to test subject lines and content variations.  
+- Visualized performance metrics using ggplot2 in R.  
+
+**Results**:  
+- 25% increase in open rates and 15% improvement in click-through rates.  
+- Reduced unsubscribe rates by 10% through personalized content.
+
+```{r}
+# Sample R code for visualization
+library(ggplot2)
+data <- data.frame(
+  Campaign = c("A", "B", "Control"),
+  OpenRate = c(0.35, 0.30, 0.25),
+  ClickRate = c(0.20, 0.18, 0.15)
+)
+ggplot(data, aes(x = Campaign, y = OpenRate, fill = Campaign)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  labs(title = "Email Campaign Open Rates", y = "Open Rate")
+```

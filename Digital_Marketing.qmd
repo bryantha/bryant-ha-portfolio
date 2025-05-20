@@ -1,0 +1,52 @@
+---
+title: "Digital Marketing"
+author: "Bryant Ha"
+---
+
+---
+title: "Digital Marketing: Strategy, Brand, and Positioning"
+description: "Highlighting expertise in digital marketing strategies, brand development, and market positioning for Bank of America."
+---
+
+# Digital Marketing Expertise
+
+In my role as a **Market Operation Analyst** at **Bank of America**, I leverage digital marketing to drive strategic initiatives, enhance brand loyalty, and position the bank as a leader in financial services. Below, I showcase my expertise in **marketing strategy**, **brand development**, and **market positioning** through targeted campaigns and measurable outcomes.
+
+---
+
+## Marketing Strategy: Driving Engagement through Multi-Channel Campaigns
+
+### Objective
+To increase adoption of Bank of America’s **Mobile Banking App**, used by 41 million active digital banking users, by targeting millennials and Gen Z customers with personalized digital campaigns.
+
+### Approach
+- **Channel Selection**: Utilized a multi-channel approach, including social media (Instagram, TikTok), email marketing, and in-app notifications.
+- **Content Strategy**: Created short-form video content showcasing app features like Zelle payments and budgeting tools, tailored to younger audiences.
+- **A/B Testing**: Tested two email subject lines (“Manage Your Money with Ease” vs. “Unlock Smarter Banking”) to optimize open rates.
+
+### Visualization: Campaign Engagement Metrics
+Below is a bar chart comparing engagement rates across channels.
+
+```{r}
+# Load libraries
+library(ggplot2)
+library(dplyr)
+
+# Simulated engagement data
+engagement <- data.frame(
+  Channel = c("Social Media", "Email", "In-App Notifications"),
+  Engagement_Rate = c(12, 18, 25)
+)
+
+# Bar plot
+ggplot(engagement, aes(x = Channel, y = Engagement_Rate, fill = Channel)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  labs(
+    title = "Engagement Rates by Digital Channel",
+    x = "Channel",
+    y = "Engagement Rate (%)",
+    caption = "Simulated data for illustrative purposes"
+  ) +
+  scale_fill_manual(values = c("Social Media" = "#1abc9c", "Email" = "#3498db", "In-App Notifications" = "#2c3e50"))
+```
